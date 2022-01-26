@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // EMMCMCStepSummary
 SEXP EMMCMCStepSummary(SEXP yin, SEXP varbetain, SEXP Ain, SEXP betain, SEXP tauin, SEXP em_iterin, SEXP mcmc_iterin, SEXP min_degenein);
 RcppExport SEXP _iDEA_EMMCMCStepSummary(SEXP yinSEXP, SEXP varbetainSEXP, SEXP AinSEXP, SEXP betainSEXP, SEXP tauinSEXP, SEXP em_iterinSEXP, SEXP mcmc_iterinSEXP, SEXP min_degeneinSEXP) {

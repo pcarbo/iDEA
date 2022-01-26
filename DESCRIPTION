@@ -1,19 +1,23 @@
 Package: iDEA
 Type: Package
-Title: Integrative Differential Expression and Gene Set Enrichment
-        Analysis
-Version: 1.0.1
-Date: 2020-01-21
+Title: Integrative Differential Expression and Gene Set Enrichment Analysis
+Version: 1.0.2
+Date: 2022-01-26
 Author: Shiquan Sun, Ying Ma
 Maintainer: Shiquan Sun <shiquans@umich.edu>, Ying Ma <yingma@umich.edu>
-Description: iDEA is a new method for analyzing single-cell RNAseq data. It integrates differential expression (DE) analysis and gene set enrichment analysis (GSEA) into a joint statistical framework, providing substantial power gains for both analytic tasks. iDEA requires gene-level summary statistics in terms of fold change/effect size estimates and their standard errors as input, which can be obtained using any existing single-cell RNAseq DE methods.
+Description: iDEA is a new method for analyzing single-cell RNAseq
+    data. It integrates differential expression (DE) analysis and gene set
+    enrichment analysis (GSEA) into a joint statistical framework,
+    providing substantial power gains for both analytic tasks. iDEA
+    requires gene-level summary statistics in terms of fold change/effect
+    size estimates and their standard errors as input, which can be
+    obtained using any existing single-cell RNAseq DE methods.
 License: GPL-3
 Imports: Rcpp (>= 1.0.0), RcppArmadillo, doParallel, doSNOW, pbmcapply,
-        foreach, parallel, methods, utils, stats
+         foreach, parallel, methods, utils, stats
 LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 7.1.0
 NeedsCompilation: yes
-Packaged: 2020-07-20 21:41:26 UTC; yingma
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 Depends: R (>= 3.5.0)
